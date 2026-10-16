@@ -28,29 +28,23 @@
   window.addEventListener('storage', function (e) { if (e.key === THEME_KEY) setTheme(e.newValue); });
   syncThemeButtons();
 
-  /* ---------- Desktop audience dropdowns ---------- */
-  var ddButtons = Array.prototype.slice.call(document.querySelectorAll('[data-dd-toggle]'));
-  function panelFor(btn) { return document.getElementById(btn.getAttribute('aria-controls')); }
-  function closeDropdowns(except) {
-    ddButtons.forEach(function (b) {
-      if (b === except) return;
-      b.setAttribute('aria-expanded', 'false');
-      panelFor(b).hidden = true;
-    });
+  /* ---------- Desktop audience submenus ----------
+     CSS opens them on :hover / :focus-within. JS only dismisses: after a submenu link is
+     followed (focus would otherwise keep it open over the page) and on Escape. */
+  var navItems = Array.prototype.slice.call(document.querySelectorAll('.aud-nav__item'));
+  function dismiss(item) {
+    // Blur first: the focusout it triggers clears the dismissal, so add the class after.
+    if (item.contains(document.activeElement)) document.activeElement.blur();
+    item.classList.add('is-dismissed');
   }
-  ddButtons.forEach(function (b) {
-    b.addEventListener('click', function () {
-      var open = b.getAttribute('aria-expanded') === 'true';
-      closeDropdowns(b);
-      b.setAttribute('aria-expanded', String(!open));
-      panelFor(b).hidden = open;
+  navItems.forEach(function (item) {
+    var reset = function () { item.classList.remove('is-dismissed'); };
+    item.addEventListener('mouseleave', reset);
+    item.addEventListener('focusout', function (e) { if (!item.contains(e.relatedTarget)) reset(); });
+    item.addEventListener('focusin', function (e) { if (!item.contains(e.relatedTarget)) reset(); });
+    item.querySelector('.dropdown').addEventListener('click', function (e) {
+      if (e.target.closest('a')) dismiss(item);
     });
-    panelFor(b).addEventListener('click', function (e) {
-      if (e.target.closest('a')) closeDropdowns();
-    });
-  });
-  document.addEventListener('mousedown', function (e) {
-    if (!e.target.closest('[data-dd]')) closeDropdowns();
   });
 
   /* ---------- Mobile menu ---------- */
@@ -92,8 +86,12 @@
 
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
-    var openDd = ddButtons.filter(function (b) { return b.getAttribute('aria-expanded') === 'true'; })[0];
-    if (openDd) { closeDropdowns(); openDd.focus(); }
+    navItems.forEach(function (item) {
+      if (!item.contains(document.activeElement) && !item.matches(':hover')) return;
+      var link = item.querySelector('.aud-nav__link');
+      item.classList.add('is-dismissed');
+      if (item.contains(document.activeElement)) link.focus();
+    });
     if (menu && !menu.hidden) { setMenu(false); menuBtn.focus(); }
   });
 

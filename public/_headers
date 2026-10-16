@@ -12,6 +12,11 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
 
-# Assets are not fingerprinted, so cache for a day and revalidate.
-/assets/*
+# CSS/JS filenames are not fingerprinted: always revalidate (cheap 304 via ETag) so a deploy
+# never pairs new HTML with stale CSS/JS. Images rarely change; cache them for a day.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/img/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
