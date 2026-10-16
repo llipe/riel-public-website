@@ -11,4 +11,4 @@ Copy `runbook-template.md` to start a new one, and add a row here.
 
 | Runbook | Trigger | Owner | Last verified |
 | ------- | ------- | ----- | ------------- |
-|         |         |       |               |
+| [deploy-cloudflare-pages](deploy-cloudflare-pages.md) | Publish, set up or roll back riel.social | riel web (ThinkFirst) | not yet run against production |

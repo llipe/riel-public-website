@@ -1,0 +1,17 @@
+{
+  "name": "riel-public-website",
+  "private": true,
+  "description": "Public marketing site for riel (riel.social). Plain static HTML/CSS/JS served from public/ by Cloudflare Pages.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --port 8788 --compatibility-date=2026-10-12",
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "lint": "html-validate \"public/**/*.html\"",
+    "validate": "pnpm run lint && pnpm run test",
+    "deploy": "wrangler pages deploy public --project-name riel-public-website --branch main"
+  },
+  "devDependencies": {
+    "html-validate": "^11.16.2",
+    "wrangler": "^4.151.0"
+  }
+}

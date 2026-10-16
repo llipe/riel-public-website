@@ -1,0 +1,166 @@
+/* riel — design tokens como CSS custom properties. Dark es el tema principal. */
+
+:root, [data-theme="dark"] {
+  --surface: #08080A;
+  --surface-raised: #141418;
+  --surface-hover: #1C1C22;
+  --surface-selected: #24242C;
+  --ink: #F5F5F7;
+  --ink-muted: #A0A0AA;
+  --ink-disabled: #5A5A63;
+  --line: #2A2A31;
+  --line-strong: #6E6E78;
+  --night: #08080A;
+  --on-night: #F5F5F7;
+  --pink: #FF2E9A;
+  --pink-button: #C2006A;
+  --pink-button-hover: #D1006B;
+  --pink-button-pressed: #A8004F;
+  --on-pink-button: #FFFFFF;
+  --yellow: #FFE600;
+  --yellow-hover: #FFEE4D;
+  --yellow-pressed: #E6CF00;
+  --positive: #3BD18A;
+  --positive-hover: #4ADE9A;
+  --positive-pressed: #2FC47E;
+  --on-positive: #08080A;
+  --cyan: #00E0FF;
+  --on-accent: #08080A;
+  --link: var(--cyan);
+  --focus: var(--link);
+  --disabled-fill: #1C1C22;
+  --status-neutral: #A0A0AA;
+  --status-neutral-bg: #1C1C22;
+  --status-info: #00E0FF;
+  --status-info-bg: #062A31;
+  --status-success: #3BD18A;
+  --status-success-bg: #0E2A1D;
+  --status-danger: #FF5A4F;
+  --status-danger-bg: #2E1210;
+  --shadow-overlay: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+[data-theme="light"] {
+  --surface: #F5F5F7;
+  --surface-raised: #FFFFFF;
+  --surface-hover: #EDEDF0;
+  --surface-selected: #E4E4E9;
+  --ink: #0A0A0C;
+  --ink-muted: #56565E;
+  --ink-disabled: #9A9AA2;
+  --line: #D9D9DE;
+  --line-strong: #7E7E87;
+  --night: #08080A;
+  --on-night: #F5F5F7;
+  --pink: #FF1F8F;
+  --pink-button: #C2006A;
+  --pink-button-hover: #D1006B;
+  --pink-button-pressed: #A8004F;
+  --on-pink-button: #FFFFFF;
+  --yellow: #E6CF00;
+  --yellow-hover: #D1BC00;
+  --yellow-pressed: #B8A500;
+  --positive: #0A6B42;
+  --positive-hover: #0B7A4B;
+  --positive-pressed: #075C38;
+  --on-positive: #FFFFFF;
+  --cyan: #0096C7;
+  --on-accent: #08080A;
+  --link: #00759C;
+  --focus: var(--link);
+  --disabled-fill: #EDEDF0;
+  --status-neutral: #56565E;
+  --status-neutral-bg: #EDEDF0;
+  --status-info: #00759C;
+  --status-info-bg: #E0F3F9;
+  --status-success: #0B7A4B;
+  --status-success-bg: #E3F4EB;
+  --status-danger: #C4261B;
+  --status-danger-bg: #FBE7E5;
+  --shadow-overlay: 0 8px 24px rgba(10, 10, 12, 0.12);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+  --surface: #F5F5F7;
+  --surface-raised: #FFFFFF;
+  --surface-hover: #EDEDF0;
+  --surface-selected: #E4E4E9;
+  --ink: #0A0A0C;
+  --ink-muted: #56565E;
+  --ink-disabled: #9A9AA2;
+  --line: #D9D9DE;
+  --line-strong: #7E7E87;
+  --night: #08080A;
+  --on-night: #F5F5F7;
+  --pink: #FF1F8F;
+  --pink-button: #C2006A;
+  --pink-button-hover: #D1006B;
+  --pink-button-pressed: #A8004F;
+  --on-pink-button: #FFFFFF;
+  --yellow: #E6CF00;
+  --yellow-hover: #D1BC00;
+  --yellow-pressed: #B8A500;
+  --positive: #0A6B42;
+  --positive-hover: #0B7A4B;
+  --positive-pressed: #075C38;
+  --on-positive: #FFFFFF;
+  --cyan: #0096C7;
+  --on-accent: #08080A;
+  --link: #00759C;
+  --focus: var(--link);
+  --disabled-fill: #EDEDF0;
+  --status-neutral: #56565E;
+  --status-neutral-bg: #EDEDF0;
+  --status-info: #00759C;
+  --status-info-bg: #E0F3F9;
+  --status-success: #0B7A4B;
+  --status-success-bg: #E3F4EB;
+  --status-danger: #C4261B;
+  --status-danger-bg: #FBE7E5;
+  --shadow-overlay: 0 8px 24px rgba(10, 10, 12, 0.12);
+    color-scheme: light;
+  }
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --radius-0: 0px;
+  --radius-1: 2px;
+  --radius-full: 9999px;
+  --border-hair: 1px;
+  --border-bold: 2px;
+  --control-sm: 32px;
+  --control-md: 40px;
+  --control-lg: 48px;
+  --touch-min: 44px;
+  --row-dense: 44px;
+  --content-max: 1280px;
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+/* Estilos tipográficos */
+.t-display { font-family: var(--font-sans); font-size: 48px; line-height: 52px; font-weight: 800; letter-spacing: -0.03em; font-stretch: 125%; }
+.t-heading-1 { font-family: var(--font-sans); font-size: 32px; line-height: 36px; font-weight: 800; letter-spacing: -0.02em; font-stretch: 125%; }
+.t-heading-2 { font-family: var(--font-sans); font-size: 20px; line-height: 28px; font-weight: 700; letter-spacing: -0.01em; }
+.t-heading-3 { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 700; }
+.t-body { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 400; }
+.t-body-strong { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600; }
+.t-body-lg { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+.t-label { font-family: var(--font-sans); font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.t-caption { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 400; }
+.t-figure { font-family: var(--font-mono); font-size: 20px; line-height: 28px; font-weight: 500; letter-spacing: -0.01em; }
+.t-data { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 400; }
