@@ -1,0 +1,332 @@
+{
+  "version": "0.16.4",
+  "pinned": "0.16.4",
+  "installed_at": "2026-10-16T16:59:24.598Z",
+  "files": [
+    {
+      "path": ".claude/agents/developer.md",
+      "profile": "claude",
+      "sha256": "c982a778986fdfd68a2cc33bbcfd36206513ed92f53e484c5b7d3962dc801c3b",
+      "origin_sha256": "c982a778986fdfd68a2cc33bbcfd36206513ed92f53e484c5b7d3962dc801c3b"
+    },
+    {
+      "path": ".claude/agents/github-ops.md",
+      "profile": "claude",
+      "sha256": "5637f60afef5e555dac9a5c5f5437da47688873e9bcda9f7afc6170e00048844",
+      "origin_sha256": "5637f60afef5e555dac9a5c5f5437da47688873e9bcda9f7afc6170e00048844"
+    },
+    {
+      "path": ".claude/agents/housekeeping.md",
+      "profile": "claude",
+      "sha256": "15c18217bda993cd5bb0341552aeb1f291dd3f92311da6eaba4dabd6304ff216",
+      "origin_sha256": "15c18217bda993cd5bb0341552aeb1f291dd3f92311da6eaba4dabd6304ff216"
+    },
+    {
+      "path": ".claude/agents/qa-engineer.md",
+      "profile": "claude",
+      "sha256": "3058b68f0b39de64b373cf211a657500627837f719445594863bc7e9ac3fea23",
+      "origin_sha256": "3058b68f0b39de64b373cf211a657500627837f719445594863bc7e9ac3fea23"
+    },
+    {
+      "path": ".claude/agents/researcher.md",
+      "profile": "claude",
+      "sha256": "3201c47d879df1723df3f5bed33417b7c88e79f5e6885ed41bee59e7ec62b485",
+      "origin_sha256": "3201c47d879df1723df3f5bed33417b7c88e79f5e6885ed41bee59e7ec62b485"
+    },
+    {
+      "path": ".claude/agents/technical-writer.md",
+      "profile": "claude",
+      "sha256": "3cd98425b88566d6bfaec4aa54aa7e7c7de65a6ec92ba48dafc18013a623c1e3",
+      "origin_sha256": "3cd98425b88566d6bfaec4aa54aa7e7c7de65a6ec92ba48dafc18013a623c1e3"
+    },
+    {
+      "path": ".claude/agents/ux-engineer.md",
+      "profile": "claude",
+      "sha256": "c8f2a081bb7e967d4877f122a68618556c14f2bbea2c3dabd7b3e2eb0c7cffc5",
+      "origin_sha256": "c8f2a081bb7e967d4877f122a68618556c14f2bbea2c3dabd7b3e2eb0c7cffc5"
+    },
+    {
+      "path": ".claude/agents/verifier.md",
+      "profile": "claude",
+      "sha256": "ffd28ee2c0c55ec64c3f69b939bb69a2f7311dc3d8ec16ad203bd5d0a0d71001",
+      "origin_sha256": "ffd28ee2c0c55ec64c3f69b939bb69a2f7311dc3d8ec16ad203bd5d0a0d71001"
+    },
+    {
+      "path": ".claude/skills/activity-codebase-research/SKILL.md",
+      "profile": "claude",
+      "sha256": "473d72b08880e1fbab91982b5bba9e95d9689d0186e9a535b15554d1cb57afd5",
+      "origin_sha256": "473d72b08880e1fbab91982b5bba9e95d9689d0186e9a535b15554d1cb57afd5"
+    },
+    {
+      "path": ".claude/skills/activity-contract-test-design/SKILL.md",
+      "profile": "claude",
+      "sha256": "41286d191e291090bcbdca01b24f2c113fbcfb36ef0d4f9213e9e6a106f3b57f",
+      "origin_sha256": "41286d191e291090bcbdca01b24f2c113fbcfb36ef0d4f9213e9e6a106f3b57f"
+    },
+    {
+      "path": ".claude/skills/activity-coverage-gap-analysis/SKILL.md",
+      "profile": "claude",
+      "sha256": "0c8542c5217a13f620f240c6df052631869129cf5e4a924fabc4811e8a11709a",
+      "origin_sha256": "0c8542c5217a13f620f240c6df052631869129cf5e4a924fabc4811e8a11709a"
+    },
+    {
+      "path": ".claude/skills/activity-drift-reconciliation/SKILL.md",
+      "profile": "claude",
+      "sha256": "7d60a397d8768aaa5af50f6fb27f11e2795e90e048a7902f501f81a954a0d021",
+      "origin_sha256": "7d60a397d8768aaa5af50f6fb27f11e2795e90e048a7902f501f81a954a0d021"
+    },
+    {
+      "path": ".claude/skills/activity-e2e-test-design/SKILL.md",
+      "profile": "claude",
+      "sha256": "d0ab60a259ec86fe5018a082ad6d48852902f4dfb74777f6ca238b1757c07ad0",
+      "origin_sha256": "d0ab60a259ec86fe5018a082ad6d48852902f4dfb74777f6ca238b1757c07ad0"
+    },
+    {
+      "path": ".claude/skills/activity-e2e-test-implementation/SKILL.md",
+      "profile": "claude",
+      "sha256": "ce65e8160a6e1f484b7f69123accdbc61a7ae44c19d6bc5977722b75257d79ca",
+      "origin_sha256": "ce65e8160a6e1f484b7f69123accdbc61a7ae44c19d6bc5977722b75257d79ca"
+    },
+    {
+      "path": ".claude/skills/activity-edge-case-refinement/SKILL.md",
+      "profile": "claude",
+      "sha256": "b3cbf021b8408cce87a2b151ff2c8d9d7c86a48fde569edf4dcaf219729632e4",
+      "origin_sha256": "b3cbf021b8408cce87a2b151ff2c8d9d7c86a48fde569edf4dcaf219729632e4"
+    },
+    {
+      "path": ".claude/skills/activity-generate-spec/SKILL.md",
+      "profile": "claude",
+      "sha256": "b292dd8cc330ea179cd5a258e08f3215eee3394f70a54c303e74b28ef625cb70",
+      "origin_sha256": "b292dd8cc330ea179cd5a258e08f3215eee3394f70a54c303e74b28ef625cb70"
+    },
+    {
+      "path": ".claude/skills/activity-generate-stories/SKILL.md",
+      "profile": "claude",
+      "sha256": "f960420c335b0af2029ba1d7c9fac0373da3444b11fffc17dc7fe876bd693a75",
+      "origin_sha256": "f960420c335b0af2029ba1d7c9fac0373da3444b11fffc17dc7fe876bd693a75"
+    },
+    {
+      "path": ".claude/skills/activity-grill/SKILL.md",
+      "profile": "claude",
+      "sha256": "234b6127cfcddc3904a20539ac519b83a34b1b91af42d491edfec6c3167a0318",
+      "origin_sha256": "234b6127cfcddc3904a20539ac519b83a34b1b91af42d491edfec6c3167a0318"
+    },
+    {
+      "path": ".claude/skills/activity-init/SKILL.md",
+      "profile": "claude",
+      "sha256": "076e666c3768bd7f4aabad7e93c39f0a3981526384dc601a3ce73bdac110fdb7",
+      "origin_sha256": "076e666c3768bd7f4aabad7e93c39f0a3981526384dc601a3ce73bdac110fdb7"
+    },
+    {
+      "path": ".claude/skills/activity-integration-test-implementation/SKILL.md",
+      "profile": "claude",
+      "sha256": "0d8c1fd481e7016659357f53df2f022f36460db5ce46dc1d6673812a7a2457ba",
+      "origin_sha256": "0d8c1fd481e7016659357f53df2f022f36460db5ce46dc1d6673812a7a2457ba"
+    },
+    {
+      "path": ".claude/skills/activity-publish-github/SKILL.md",
+      "profile": "claude",
+      "sha256": "6887b0a4e73a40c5669f8c3a09ef47749ca05796474836b6c1321bc8cecf1ee6",
+      "origin_sha256": "6887b0a4e73a40c5669f8c3a09ef47749ca05796474836b6c1321bc8cecf1ee6"
+    },
+    {
+      "path": ".claude/skills/activity-random-test-tactics/SKILL.md",
+      "profile": "claude",
+      "sha256": "f202d150ec0adf3caf16f15ec275e8c56b18792e461b0e51c651f964372c706b",
+      "origin_sha256": "f202d150ec0adf3caf16f15ec275e8c56b18792e461b0e51c651f964372c706b"
+    },
+    {
+      "path": ".claude/skills/activity-refine/SKILL.md",
+      "profile": "claude",
+      "sha256": "82087e5ce60ecf8c84aa8779c97568f6aa3a4b9ceeba7868bb2719dbdc2e8aee",
+      "origin_sha256": "82087e5ce60ecf8c84aa8779c97568f6aa3a4b9ceeba7868bb2719dbdc2e8aee"
+    },
+    {
+      "path": ".claude/skills/activity-test-implementation/SKILL.md",
+      "profile": "claude",
+      "sha256": "b6d727b0cd9e3e3299b1b516fcb9ed74d346ec0d1fe1250e0a82c940f2578ae2",
+      "origin_sha256": "b6d727b0cd9e3e3299b1b516fcb9ed74d346ec0d1fe1250e0a82c940f2578ae2"
+    },
+    {
+      "path": ".claude/skills/activity-test-standards/SKILL.md",
+      "profile": "claude",
+      "sha256": "bbf4aee046b8dde53b0b1b85c9e35fdaa3854784bb89e0e73df6708e1ac78032",
+      "origin_sha256": "bbf4aee046b8dde53b0b1b85c9e35fdaa3854784bb89e0e73df6708e1ac78032"
+    },
+    {
+      "path": ".claude/skills/aws-ops/SKILL.md",
+      "profile": "claude",
+      "sha256": "803bf70c9de56d00538770b38310a1f5afe55f344d8bd595f575abee3bd69df3",
+      "origin_sha256": "803bf70c9de56d00538770b38310a1f5afe55f344d8bd595f575abee3bd69df3"
+    },
+    {
+      "path": ".claude/skills/deploy-ops/SKILL.md",
+      "profile": "claude",
+      "sha256": "8948ecd057a2827c2f02f5cf4c9dd710e61160cce9e5d6b12cd52c2b38e45cfe",
+      "origin_sha256": "8948ecd057a2827c2f02f5cf4c9dd710e61160cce9e5d6b12cd52c2b38e45cfe"
+    },
+    {
+      "path": ".claude/skills/fly-ops/SKILL.md",
+      "profile": "claude",
+      "sha256": "44a21eb30d3c6a21e346967508db7dbda923c583a5d2e333452713ead19a7347",
+      "origin_sha256": "44a21eb30d3c6a21e346967508db7dbda923c583a5d2e333452713ead19a7347"
+    },
+    {
+      "path": ".claude/skills/git-ops/SKILL.md",
+      "profile": "claude",
+      "sha256": "01342a6d920cbd6240883d1b88382cb87a4690801ae32703c3c689ea4a351520",
+      "origin_sha256": "01342a6d920cbd6240883d1b88382cb87a4690801ae32703c3c689ea4a351520"
+    },
+    {
+      "path": ".claude/skills/implement/SKILL.md",
+      "profile": "claude",
+      "sha256": "4dddd8f70639138de4fb74dd6ca7bd8ced9d8612f1c8abe5052ed8111bb3fc69",
+      "origin_sha256": "4dddd8f70639138de4fb74dd6ca7bd8ced9d8612f1c8abe5052ed8111bb3fc69"
+    },
+    {
+      "path": ".claude/skills/memo-cli-usage/REFERENCE.md",
+      "profile": "claude",
+      "sha256": "04c17fcc1f001227a2a205ef2994954a2e6d75f948df90ac46ff9b0b44ccc541",
+      "origin_sha256": "04c17fcc1f001227a2a205ef2994954a2e6d75f948df90ac46ff9b0b44ccc541"
+    },
+    {
+      "path": ".claude/skills/memo-cli-usage/SKILL.md",
+      "profile": "claude",
+      "sha256": "9805de894c2c712be7fd90fa645e80095b92e06950954ab4d56a082abc3ad25c",
+      "origin_sha256": "9805de894c2c712be7fd90fa645e80095b92e06950954ab4d56a082abc3ad25c"
+    },
+    {
+      "path": ".claude/skills/plan/SKILL.md",
+      "profile": "claude",
+      "sha256": "92435105aee9937f29070947cf8b20a5af2fce9b9bcf38e3bbc1d0504efd02a0",
+      "origin_sha256": "92435105aee9937f29070947cf8b20a5af2fce9b9bcf38e3bbc1d0504efd02a0"
+    },
+    {
+      "path": ".claude/skills/supabase-ops/SKILL.md",
+      "profile": "claude",
+      "sha256": "9f183494b14c3da63ffcd9a63897ee53fe2813f7829493350167e2fc21f141c4",
+      "origin_sha256": "9f183494b14c3da63ffcd9a63897ee53fe2813f7829493350167e2fc21f141c4"
+    },
+    {
+      "path": ".claude/skills/ux-scaffold/SKILL.md",
+      "profile": "claude",
+      "sha256": "7acba65f872d9a15a4273ec07e26aad6c993d5eb0eaff49e55a547920bdb5fe2",
+      "origin_sha256": "7acba65f872d9a15a4273ec07e26aad6c993d5eb0eaff49e55a547920bdb5fe2"
+    },
+    {
+      "path": ".claude/skills/ux-scaffold/scripts/scaffold-full.sh",
+      "profile": "claude",
+      "sha256": "ec9453fd592870a8a76b7b0b890b97b1efed30035c17a9284ad4725ec8d4e452",
+      "origin_sha256": "ec9453fd592870a8a76b7b0b890b97b1efed30035c17a9284ad4725ec8d4e452"
+    },
+    {
+      "path": ".claude/skills/ux-scaffold/scripts/scaffold-lite.sh",
+      "profile": "claude",
+      "sha256": "fa5c6e67ef94cea6d892af8e78f7231ac7863804f845a61bf4230ed8632d0e70",
+      "origin_sha256": "fa5c6e67ef94cea6d892af8e78f7231ac7863804f845a61bf4230ed8632d0e70"
+    },
+    {
+      "path": ".claude/skills/ux-theme-gen/SKILL.md",
+      "profile": "claude",
+      "sha256": "57e20e92f3517f06008215a1e197178ffcdaf03767f757ff3e43e4fef1f441f6",
+      "origin_sha256": "57e20e92f3517f06008215a1e197178ffcdaf03767f757ff3e43e4fef1f441f6"
+    },
+    {
+      "path": ".claude/commands/developer.md",
+      "profile": "claude",
+      "sha256": "99601cf5dbbc103e0e6b18944821c3d4849db9972c4f7729b837ece0a434cc1c",
+      "origin_sha256": "99601cf5dbbc103e0e6b18944821c3d4849db9972c4f7729b837ece0a434cc1c"
+    },
+    {
+      "path": ".claude/commands/github-ops.md",
+      "profile": "claude",
+      "sha256": "822b97da7c41c7f53acec14f4c7ef230153caebbdf0cebcb0abea9f2b0814972",
+      "origin_sha256": "822b97da7c41c7f53acec14f4c7ef230153caebbdf0cebcb0abea9f2b0814972"
+    },
+    {
+      "path": ".claude/commands/housekeeping.md",
+      "profile": "claude",
+      "sha256": "8ad2eee62f98cb46fd0acfd8428e4c0b32c2c56d5a5eab45790d965ce1fd98a6",
+      "origin_sha256": "8ad2eee62f98cb46fd0acfd8428e4c0b32c2c56d5a5eab45790d965ce1fd98a6"
+    },
+    {
+      "path": ".claude/commands/infra-engineer.md",
+      "profile": "claude",
+      "sha256": "9a0e27a2716128d5cd0bfa190903b1fc4c6dcf6b54ddfb33ca10ac6495e33c6c",
+      "origin_sha256": "9a0e27a2716128d5cd0bfa190903b1fc4c6dcf6b54ddfb33ca10ac6495e33c6c"
+    },
+    {
+      "path": ".claude/commands/planner.md",
+      "profile": "claude",
+      "sha256": "52fc307c28c9787c689dbb5b3e0891573e937a1b389d640eed8c516b04d842cf",
+      "origin_sha256": "52fc307c28c9787c689dbb5b3e0891573e937a1b389d640eed8c516b04d842cf"
+    },
+    {
+      "path": ".claude/commands/product-engineer.md",
+      "profile": "claude",
+      "sha256": "b460ee7d754912dbf64046fa0d136b0876793bc8938db54dea62d53f47543871",
+      "origin_sha256": "b460ee7d754912dbf64046fa0d136b0876793bc8938db54dea62d53f47543871"
+    },
+    {
+      "path": ".claude/commands/qa-engineer.md",
+      "profile": "claude",
+      "sha256": "25ac1b8d12ed75ba99281a05531a98e66340e0a6828ed62ad471508fb97e170a",
+      "origin_sha256": "25ac1b8d12ed75ba99281a05531a98e66340e0a6828ed62ad471508fb97e170a"
+    },
+    {
+      "path": ".claude/commands/researcher.md",
+      "profile": "claude",
+      "sha256": "f3c5676d9b7abc5f7e2fca26567236f15ed776fa508f2201f7ae3b3688bc4df6",
+      "origin_sha256": "f3c5676d9b7abc5f7e2fca26567236f15ed776fa508f2201f7ae3b3688bc4df6"
+    },
+    {
+      "path": ".claude/commands/technical-writer.md",
+      "profile": "claude",
+      "sha256": "ce9be200e9b4a6c7273afca5db1ba2d9033f1c582bb4a2dd7607d1c36e8b4863",
+      "origin_sha256": "ce9be200e9b4a6c7273afca5db1ba2d9033f1c582bb4a2dd7607d1c36e8b4863"
+    },
+    {
+      "path": ".claude/commands/ux-engineer.md",
+      "profile": "claude",
+      "sha256": "cafecff379e76596ab7315bbfaa7142b2a377f03c8d2375a3a7d8caf86c79f0e",
+      "origin_sha256": "cafecff379e76596ab7315bbfaa7142b2a377f03c8d2375a3a7d8caf86c79f0e"
+    },
+    {
+      "path": ".claude/commands/verifier-audit.md",
+      "profile": "claude",
+      "sha256": "9ed6088583d29459b3795686f0ecda46cfa61a88b9f56ecb348221b3a07e8ab2",
+      "origin_sha256": "9ed6088583d29459b3795686f0ecda46cfa61a88b9f56ecb348221b3a07e8ab2"
+    },
+    {
+      "path": ".claude/commands/verifier-design.md",
+      "profile": "claude",
+      "sha256": "db3667e52316c82e57a649b67cbfba3f3cdbae1c2fc4f0ffd2c43a95b4497083",
+      "origin_sha256": "db3667e52316c82e57a649b67cbfba3f3cdbae1c2fc4f0ffd2c43a95b4497083"
+    },
+    {
+      "path": ".claude/hooks/branch-guard.sh",
+      "profile": "claude",
+      "sha256": "1de5e0760d7a6a21b444d6da8f5fd432eb678d14078215e8a42577473f857293",
+      "origin_sha256": "1de5e0760d7a6a21b444d6da8f5fd432eb678d14078215e8a42577473f857293"
+    },
+    {
+      "path": ".claude/hooks/git-guard.sh",
+      "profile": "claude",
+      "sha256": "bcc85d2a327b6c3d3a74430d104f5341d2907706cd3033c6d2816b4bbf3372f2",
+      "origin_sha256": "bcc85d2a327b6c3d3a74430d104f5341d2907706cd3033c6d2816b4bbf3372f2"
+    },
+    {
+      "path": "DESIGN.md",
+      "profile": "root",
+      "sha256": "f989ab8d5a37345aa6cc179a09f38ca1a17480144e2c55f5fa7c634a61a3a00a",
+      "origin_sha256": "f989ab8d5a37345aa6cc179a09f38ca1a17480144e2c55f5fa7c634a61a3a00a"
+    },
+    {
+      "path": "TESTING.md",
+      "profile": "root",
+      "sha256": "ffea0d474bef2b411149818131420e26a6007f0dd8c4637b2e27333a9f5fe3c9",
+      "origin_sha256": "ffea0d474bef2b411149818131420e26a6007f0dd8c4637b2e27333a9f5fe3c9"
+    }
+  ],
+  "extraction": {}
+}
