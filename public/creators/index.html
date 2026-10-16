@@ -29,13 +29,13 @@
   <header class="site-header">
     <div class="wrap site-header__bar">
       <a class="site-header__home" href="/" aria-label="riel, inicio"><span class="brand">riel</span></a>
-      <nav class="aud-nav only-wide" aria-label="Audiencia" data-dd>
+      <nav class="aud-nav only-wide" aria-label="Audiencia">
         <div class="aud-nav__item">
-          <button type="button" class="aud-nav__btn" data-dd-toggle aria-expanded="false" aria-controls="dd-marcas"><span class="rl-mark rl-mark--seller"></span>Para marcas<span class="aud-nav__caret" aria-hidden="true"></span></button>
-          <div class="dropdown rl-view-seller" id="dd-marcas" hidden>
+          <a class="aud-nav__link" href="/marcas/"><span class="rl-mark rl-mark--seller"></span>Para marcas<span class="aud-nav__caret" aria-hidden="true"></span></a>
+          <div class="dropdown rl-view-seller" id="dd-marcas">
             <nav class="dropdown__links" aria-label="Secciones de la página de marcas">
               <span class="t-label">En la página de marcas</span>
-              <a href="/marcas/#beneficios">Beneficios</a>
+              <a href="/marcas/">Beneficios</a>
               <a href="/marcas/#gestion">Menos gestión</a>
               <a href="/marcas/#como-funciona">Cómo funciona</a>
               <a href="/marcas/#formas-de-pago">Formas de pago</a>
@@ -43,16 +43,16 @@
             </nav>
             <div class="dropdown__pitch">
               <span class="t-body muted pretty">Crea tu cuenta y publica tu primera Campaña.</span>
-              <a href="https://app.riel.social/sellers/sign-up" class="rl-btn rl-btn--primary rl-btn--block">Crear cuenta de marca</a>
+              <a href="https://app.riel.social/seller/sign-up" class="rl-btn rl-btn--primary rl-btn--block">Crear cuenta de marca</a>
             </div>
           </div>
         </div>
         <div class="aud-nav__item">
-          <button type="button" class="aud-nav__btn" data-dd-toggle aria-expanded="false" aria-controls="dd-creators" aria-current="page"><span class="rl-mark rl-mark--creator"></span>Para creators<span class="aud-nav__caret" aria-hidden="true"></span></button>
-          <div class="dropdown rl-view-creator" id="dd-creators" hidden>
+          <a class="aud-nav__link" href="/creators/" aria-current="page"><span class="rl-mark rl-mark--creator"></span>Para creators<span class="aud-nav__caret" aria-hidden="true"></span></a>
+          <div class="dropdown rl-view-creator" id="dd-creators">
             <nav class="dropdown__links" aria-label="Secciones de la página de creators">
               <span class="t-label">En la página de creators</span>
-              <a href="/creators/#beneficios">Beneficios</a>
+              <a href="/creators/">Beneficios</a>
               <a href="/creators/#crecer">Crecer</a>
               <a href="/creators/#como-funciona">Cómo funciona</a>
               <a href="/creators/#formas-de-pago">Formas de pago</a>
@@ -81,7 +81,7 @@
       <div id="mm-marcas" class="mobile-menu__aud rl-view-seller" role="tabpanel" aria-labelledby="tab-marcas" hidden>
         <nav class="mobile-menu__panel" aria-label="Menú, secciones de marcas">
           <span class="t-label">En la página de marcas</span>
-          <a href="/marcas/#beneficios">Beneficios</a>
+          <a href="/marcas/">Beneficios</a>
           <a href="/marcas/#gestion">Menos gestión</a>
           <a href="/marcas/#como-funciona">Cómo funciona</a>
           <a href="/marcas/#formas-de-pago">Formas de pago</a>
@@ -90,7 +90,7 @@
         <div class="mobile-menu__foot">
           <div class="two-up">
             <a href="https://app.riel.social/seller/sign-in" class="rl-btn rl-btn--lg">Iniciar sesión</a>
-            <a href="https://app.riel.social/sellers/sign-up" class="rl-btn rl-btn--primary rl-btn--lg">Crear cuenta</a>
+            <a href="https://app.riel.social/seller/sign-up" class="rl-btn rl-btn--primary rl-btn--lg">Crear cuenta</a>
           </div>
           <span class="rl-caption center">Te lleva a app.riel.social</span>
         </div>
@@ -98,7 +98,7 @@
       <div id="mm-creators" class="mobile-menu__aud rl-view-creator" role="tabpanel" aria-labelledby="tab-creators">
         <nav class="mobile-menu__panel" aria-label="Menú, secciones de creators">
           <span class="t-label">En la página de creators</span>
-          <a href="/creators/#beneficios">Beneficios</a>
+          <a href="/creators/">Beneficios</a>
           <a href="/creators/#crecer">Crecer</a>
           <a href="/creators/#como-funciona">Cómo funciona</a>
           <a href="/creators/#formas-de-pago">Formas de pago</a>
@@ -293,7 +293,7 @@
         </nav>
         <nav aria-label="Cuenta">
           <span class="t-label">app.riel.social</span>
-          <a href="https://app.riel.social/sellers/sign-up">Crear cuenta de marca</a>
+          <a href="https://app.riel.social/seller/sign-up">Crear cuenta de marca</a>
           <a href="https://app.riel.social/creator/sign-up">Crear cuenta de creator</a>
           <a href="https://app.riel.social/creator/sign-in">Iniciar sesión</a>
         </nav>

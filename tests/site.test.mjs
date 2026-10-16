@@ -67,6 +67,12 @@ for (const page of pages) {
     assert.doesNotMatch(page.html, /\son[a-z]+="/, 'inline event handler');
   });
 
+  test(`${page.url}: app links use the right paths`, () => {
+    for (const href of attrs(page.html, 'href').filter((h) => h.startsWith('https://app.riel.social/'))) {
+      assert.match(href, /^https:\/\/app\.riel\.social\/(seller|creator)\/(sign-up|sign-in)$/, href);
+    }
+  });
+
   test(`${page.url}: has lang, title and viewport`, () => {
     assert.match(page.html, /<html lang="es-CL"/);
     assert.match(page.html, /<title>[^<]+<\/title>/);

@@ -70,28 +70,34 @@ h1, h2, h3, p, dl, dd, ol, ul, figure { margin: 0; }
 
 .aud-nav { display: flex; gap: 28px; margin-left: 28px; }
 .aud-nav__item { position: relative; display: flex; }
-.aud-nav__btn {
+.aud-nav__link {
   display: flex; align-items: center; gap: 8px;
-  padding: 0; margin-bottom: -1px;
-  background: transparent; border: 0; border-radius: 0;
+  margin-bottom: -1px;
   border-bottom: 2px solid transparent;
-  font: 600 14px/20px var(--font-sans); color: var(--ink-muted); cursor: pointer;
+  font: 600 14px/20px var(--font-sans); color: var(--ink-muted); text-decoration: none;
 }
-.aud-nav__btn:hover { color: var(--ink); }
-.aud-nav__btn[aria-current="page"],
-.aud-nav__btn[aria-expanded="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.aud-nav__link:focus-visible { outline-offset: -2px; }
+.aud-nav__link[aria-current="page"],
+.aud-nav__item:hover .aud-nav__link,
+.aud-nav__item:focus-within .aud-nav__link { color: var(--ink); border-bottom-color: var(--ink); }
 .aud-nav__caret { font: 400 11px/1 var(--font-mono); }
 .aud-nav__caret::before { content: "▾"; }
-.aud-nav__btn[aria-expanded="true"] .aud-nav__caret::before { content: "▴"; }
 
+/* Submenu opens on hover and on keyboard focus inside the item; Escape dismisses it (site.js). */
 .dropdown {
-  position: absolute; left: 0; top: calc(100% + 8px);
+  position: absolute; left: 0; top: calc(100% + 8px); z-index: 1;
   width: 600px;
   background: var(--surface-raised); border: 1px solid var(--line-strong);
   box-shadow: var(--shadow-overlay);
-  display: grid; grid-template-columns: minmax(0, 1fr) 248px;
+  display: none; grid-template-columns: minmax(0, 1fr) 248px;
 }
-.dropdown[hidden] { display: none; }
+/* Invisible bridge over the 8px gap so the pointer can travel from the link into the panel. */
+.dropdown::before { content: ""; position: absolute; left: 0; right: 0; top: -9px; height: 9px; }
+.aud-nav__item:hover .dropdown,
+.aud-nav__item:focus-within .dropdown { display: grid; }
+.aud-nav__item:hover .aud-nav__caret::before,
+.aud-nav__item:focus-within .aud-nav__caret::before { content: "▴"; }
+.aud-nav__item.is-dismissed .dropdown { display: none; }
 .dropdown__links { padding: 20px 24px; display: grid; gap: 2px; align-content: start; }
 .dropdown__links .t-label { color: var(--ink-muted); margin-bottom: 8px; }
 .dropdown__links a {
