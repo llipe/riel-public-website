@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects. https://developers.cloudflare.com/pages/configuration/redirects/
+# Paths from the design tool export, in case they were ever shared.
+/Home.dc.html       /           301
+/Marcas.dc.html     /marcas/    301
+/Creators.dc.html   /creators/  301
+/home               /           301
+/brands             /marcas/    301
+
+# Creator short links (riel.social/c/<code>) are served by the app.
+# Enable once the app's short-link endpoint is confirmed:
+# /c/*  https://app.riel.social/c/:splat  302
