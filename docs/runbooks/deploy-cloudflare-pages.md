@@ -2,7 +2,7 @@
 name: runbook-deploy-cloudflare-pages
 trigger: The public site (riel.social) needs to be published, set up for the first time, or rolled back.
 owner: riel web (ThinkFirst)
-last_verified: <not yet run end to end against production>
+last_verified: 2026-10-16 (preview deploy via CLI; production not yet run)
 related: ["public/_headers", "public/_redirects", "package.json"]
 ---
 
@@ -46,10 +46,22 @@ Cloudflare serves the files as they are. Blast radius: the marketing site only;
 
 ### Manual deploy (no Git integration)
 
+The Pages project `riel-public-website` already exists in the
+`felipe@thinkfirst.tech` Cloudflare account (created 2026-10-16, production
+branch `main`).
+
 1. `pnpm install`
 2. `pnpm exec wrangler login`
-3. `pnpm run deploy` — uploads `public/` to the `riel-public-website` project
-   as a production deployment.
+3. Preview of the current branch: `pnpm run deploy:preview` →
+   `https://<branch>.riel-public-website.pages.dev` (noindex).
+4. Production: `pnpm run deploy` — uploads `public/` as the `main` branch.
+
+Note: wrangler 4.151+ delegates `pages` commands to "Pages on Workers". Creating
+a classic Pages project from the CLI needed `wrangler pages project create
+<name> --production-branch main --force`; once the project exists, plain
+`wrangler pages deploy` works and `--force` must not be passed. A brand-new
+project's `*.pages.dev` TLS certificate took about 80 seconds to issue after the
+first deployment (TLS handshake failure until then).
 
 ## Verification
 
