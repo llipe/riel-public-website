@@ -9,7 +9,7 @@
     "lint": "html-validate \"public/**/*.html\"",
     "validate": "pnpm run lint && pnpm run test",
     "deploy:preview": "wrangler pages deploy public --project-name riel-public-website --branch \"$(git branch --show-current)\"",
-    "deploy": "wrangler pages deploy public --project-name riel-public-website --branch main"
+    "deploy": "wrangler pages deploy public --project-name riel-public-website --branch main --commit-hash \"$(git rev-parse HEAD)\" --commit-message \"$(git log -1 --format=%s)\""
   },
   "devDependencies": {
     "html-validate": "^11.16.2",
