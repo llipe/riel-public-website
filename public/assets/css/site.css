@@ -422,3 +422,14 @@ main { flex: 1; }
 
 /* ---------- 404 ---------- */
 .not-found { padding-block: clamp(64px, 10vw, 128px); display: grid; gap: 24px; justify-items: start; }
+
+/* ---------- Legal pages (privacidad, términos) ---------- */
+.legal { padding-block: clamp(40px, 6vw, 80px); display: grid; gap: 40px; max-width: 760px; }
+.legal__head { display: grid; gap: 12px; }
+.legal__toc ol { padding-left: 20px; display: grid; gap: 4px; font-size: 15px; line-height: 24px; }
+.legal section { display: grid; gap: 12px; scroll-margin-top: var(--header-h); }
+.legal h2 { font: 700 20px/28px var(--font-sans); letter-spacing: -0.01em; }
+.legal p,
+.legal li { font-size: 15px; line-height: 24px; text-wrap: pretty; }
+.legal ul { padding-left: 20px; display: grid; gap: 6px; }
+.legal__note { border: 1px solid var(--line-strong); background: var(--surface); padding: 16px 20px; }
