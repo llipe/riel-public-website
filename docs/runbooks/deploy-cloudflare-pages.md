@@ -2,7 +2,7 @@
 name: runbook-deploy-cloudflare-pages
 trigger: The public site (riel.social) needs to be published, set up for the first time, or rolled back.
 owner: riel web (ThinkFirst)
-last_verified: 2026-10-16 (production deploy of main 703987a via CLI; riel.social verified)
+last_verified: 2026-11-02 (production deploy of main 3643ebf via CLI; riel.social verified)
 related: ["public/_headers", "public/_redirects", "package.json"]
 ---
 
@@ -108,6 +108,20 @@ Then open `/`, `/marcas/` and `/creators/` at phone and desktop widths, hover
 shows no CSP violations. CSS/JS are served with `max-age=0, must-revalidate`, so
 a hard refresh is not needed to see a new deploy.
 
+Images under `/assets/img/*` are cached for a day with
+`stale-while-revalidate` (see `public/_headers`). When a deploy replaces an
+image under the same filename, the first request after the deploy can still
+return the old file while Cloudflare refreshes it, and browsers that already
+have it may show it for up to 24 hours. To confirm the edge serves the new
+files:
+
+```sh
+for f in public/assets/img/*.jpg; do n=$(basename $f)
+  [ "$(shasum < $f)" = "$(curl -s $B/assets/img/$n | shasum)" ] && echo "ok $n" || echo "STALE $n"
+done
+# repeat after a minute if any print STALE
+```
+
 ## Rollback
 
 Reversible. Dashboard → Workers & Pages → `riel-public-website` → Deployments →
@@ -117,10 +131,6 @@ reintroduce it.
 
 ## Open items
 
-- **Watermarked photos are live.** The photos in `public/assets/img/` are Envato
-  Elements watermarked previews. The site owner chose to launch with them on
-  2026-10-16. Replace them with licensed downloads using the same filenames
-  (cropped to 4:5 or 9:16), merge, and deploy production.
 - **`www.riel.social` does not resolve.** Add it as a second custom domain on
   the project, or add a proxied DNS record plus a Redirect Rule
   `www.riel.social/*` → `https://riel.social/${1}` (301).
